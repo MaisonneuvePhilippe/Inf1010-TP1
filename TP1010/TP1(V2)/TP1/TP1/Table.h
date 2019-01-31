@@ -15,10 +15,13 @@ public:
 	Table(); 
 	Table(int id, int nbPlaces);
 
+	//Destructeurs
+	~Table();
+
 	//getters 
-	int getId(); 
-	int getNbPlaces(); 
-	bool estOccupee(); 
+	int getId() const;
+	int getNbPlaces() const ; 
+	bool estOccupee() const; 
 
 	//setters 
 	void libererTable(); 
@@ -30,7 +33,7 @@ public:
 	double getChiffreAffaire(); 
 
 	//affichage
-	void afficher(); 
+	void afficher() const; 
 private : 
 	Plat** commande_; 
 	unsigned int capacite_; 
