@@ -1,23 +1,13 @@
 #include "Table.h"
 #include <fstream>
 
-Table::Table()
+Table::Table() : capacite_(MAXCAP), id_(-1), nbPlaces_(1), occupee_(false)
 {
-	capacite_ = MAXCAP;
-	id_ = -1;
-	nbPlats_ = 0;
-	nbPlaces_ = 1;
-	occupee_ = false;
 	commande_ = new Plat*[MAXCAP];
 }
 
-Table::Table(int id, int nbPlaces)
+Table::Table(int id, int nbPlaces) : capacite_(MAXCAP), id_(id), nbPlaces_(nbPlaces), occupee_(false)
 {
-	capacite_ = MAXCAP;
-	id_ = id;
-	nbPlats_ = 0;
-	nbPlaces_ = nbPlaces;
-	occupee_ = false;
 	commande_ = new Plat*[MAXCAP];
 
 }
@@ -67,7 +57,7 @@ double Table::getChiffreAffaire()
 {
 	double prix = 0.0;
 
-	for (int i = 0; i < nbPlaces_; i++)
+	for (int i = 0; i < nbPlats_; i++)
 	{
 		prix += commande_[i]->getPrix;
 	}
