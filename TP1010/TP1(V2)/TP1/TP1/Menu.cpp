@@ -13,12 +13,20 @@ Menu::Menu(string fichier, TypeMenu type) : capacite_(MAXPLAT), nbPlats_(0), typ
 	
 }
 
+Menu::~Menu() { //Destructeur
+
+	for (int i = 0; i < nbPlats_; i++) {
+		listePlats_[i] = nullptr;
+	}		
+	delete[] listePlats_;
+}
+
 int Menu::getNbPlats() const
 {
 	return nbPlats_;
 }
 
-void Menu::afficher()
+void Menu::afficher() const
 {
 	for (unsigned int i = 0; i < nbPlats_; i++) {
 		{

@@ -18,12 +18,14 @@ public:
 	Menu(); 
 	Menu(string fichier, TypeMenu type); 
 
+	//Destructeur
+	~Menu();
 
 	//getters
 	int getNbPlats() const;
 	
 	//affichage 
-	void afficher(); 
+	void afficher() const; 
 
 	//methodes en plus
 	Plat* trouverPlat(string& nom); 
