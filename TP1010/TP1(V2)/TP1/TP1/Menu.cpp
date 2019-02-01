@@ -9,8 +9,7 @@ Menu::Menu() : capacite_(MAXPLAT), nbPlats_(0), type_(Matin)
 Menu::Menu(string fichier, TypeMenu type) : capacite_(MAXPLAT), nbPlats_(0), type_(type)
 {
 	listePlats_ = new Plat*[capacite_];
-	lireMenu(fichier);
-	
+	lireMenu(fichier);	
 }
 
 Menu::~Menu() { //Destructeur
