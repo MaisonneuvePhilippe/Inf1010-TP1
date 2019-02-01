@@ -63,7 +63,7 @@ void Menu::ajouterPlat(string & nom, double montant, double cout)
 
 bool Menu::lireMenu(string & fichier)
 {
-	ifstream liste("test.txt", ios::in);
+	ifstream liste(fichier, ios::in);
 	string ligneLu;
 	bool finit = false;
 	while (!ws(liste).eof())

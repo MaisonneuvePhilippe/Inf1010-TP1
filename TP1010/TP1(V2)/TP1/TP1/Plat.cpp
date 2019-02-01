@@ -10,8 +10,8 @@ Plat::Plat(string nom, double prix, double cout) : nom_(nom), prix_(prix), cout_
 {
 }
 
-Plat::~Plat() { //Destructeur
-}
+Plat::~Plat() {} //Destructeur
+
 
 string Plat::getNom() const
 {
