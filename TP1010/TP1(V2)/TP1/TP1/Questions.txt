@@ -1,0 +1,28 @@
+1. 
+
+
+void Restaurant::placerClients(int nbClients)
+{
+
+	for (int i = 0; i < nbTables_; i++) {
+		bool tableTrouvee = false;
+		Table meilleurTable(-1, 500);
+		if (!tables_[i]->estOccupee() && nbClients <= tables_[i]->getNbPlaces()) {
+			tableTrouvee = true;
+			meilleurTable = *tables_[i];
+
+			if(tables_[i]->getNbPlaces < meilleurTable) {
+				meilleurTable = *tables_[i];
+
+			}
+
+		}
+
+		if (!tableTrouvee) {
+			cout << "Aucune table n'a été trouvée pour les clients." << endl;
+		}
+		else {
+			meilleurTable.placerClient();
+		}
+	}
+}

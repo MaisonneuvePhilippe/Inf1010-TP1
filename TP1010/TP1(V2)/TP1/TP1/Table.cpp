@@ -1,3 +1,10 @@
+/*
+* Titre : Table.cpp - Travail Pratique #1
+* Date : 31/01/2019
+* Auteurs : Philippe Maisonneuve - 1959052
+*			Hugo Perronnet - 1885263
+*/
+
 #include "Table.h"
 #include <fstream>
 
@@ -9,7 +16,6 @@ Table::Table() : capacite_(MAXCAP), id_(-1), nbPlaces_(1), occupee_(false), nbPl
 Table::Table(int id, int nbPlaces) : capacite_(MAXCAP), id_(id), nbPlaces_(nbPlaces), occupee_(false), nbPlats_(0)
 {
 	commande_ = new Plat*[MAXCAP];
-	
 }
 
 Table::~Table() {
@@ -36,7 +42,7 @@ bool Table::estOccupee() const
 
 void Table::libererTable()
 {
-	occupee_ == false;
+	occupee_ = false;
 
 	for  (int i = 0; i < nbPlaces_; i++)
 	{
@@ -46,7 +52,7 @@ void Table::libererTable()
 
 void Table::placerClient()
 {
-	occupee_ == true;
+	occupee_ = true;
 }
 
 void Table::setId(int id)
@@ -66,7 +72,7 @@ double Table::getChiffreAffaire()
 
 	for (int i = 0; i < nbPlats_; i++)
 	{
-		prix += commande_[i]->getPrix;
+		prix += commande_[i]->getPrix();
 	}
 	return prix;
 }
@@ -76,9 +82,9 @@ void Table::afficher() const
 	cout << "La table numero " << id_ << " est ";
 	if (occupee_) {
 		cout << "occupe. Voici les commandes passees par les clients :" << endl;
-		for (int i = 0; i < nbPlaces_; i++)
+		for (int i = 0; i < nbPlats_; i++)
 		{
-			commande_[i]->afficher;
+			commande_[i]->afficher();
 		}
 	}
 	else

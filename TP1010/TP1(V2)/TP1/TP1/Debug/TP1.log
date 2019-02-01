@@ -1,0 +1,24 @@
+﻿  main.cpp
+  Menu.cpp
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\menu.cpp(28): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\menu.cpp(89): warning C4459: la déclaration de 'cout' masque la déclaration globale
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\iostream(29): note: voir la déclaration de 'std::cout'
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\menu.cpp(124): warning C4459: la déclaration de 'cout' masque la déclaration globale
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\iostream(29): note: voir la déclaration de 'std::cout'
+  Plat.cpp
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\plat.cpp(18): warning C4459: la déclaration de 'cout' masque la déclaration globale
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\iostream(29): note: voir la déclaration de 'std::cout'
+  Restaurant.cpp
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\restaurant.cpp(30): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\restaurant.cpp(109): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\restaurant.cpp(126): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\restaurant.cpp(166): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\restaurant.cpp(204): warning C4018: '<' : incompatibilité signed/unsigned
+  Table.cpp
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\table.cpp(22): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\table.cpp(47): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\table.cpp(73): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\table.cpp(85): warning C4018: '<' : incompatibilité signed/unsigned
+  Génération de code en cours...
+c:\users\hugo perronnet\documents\1ère année\2ème session\inf1010-git\inf1010-tp1\tp1010\tp1(v2)\tp1\tp1\restaurant.cpp(144): warning C4702: impossible d'atteindre le code
+  TP1.vcxproj -> C:\Users\Hugo Perronnet\Documents\1ère année\2ème Session\INF1010-GIT\inf1010-TP1\TP1010\TP1(V2)\TP1\Debug\TP1.exe
